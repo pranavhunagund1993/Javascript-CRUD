@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Page</title>
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- navbar starts here -->
+    <nav class="navbar">
+        <div class="logo">JavaScript CRUD</div>
+        <div class="menu">
+            <a href="./index.html">Home</a>
+            <a href="./create.html">Create</a>
+        </div>
+    </nav>
+    <!-- navbar ends here -->
+
+    <!-- container starts here -->
+    <section class="container">
+        <main class="form">
+            <div class="card">
+                <!-- Card Header -->
+                <div class="card-header">
+                    <h4 class="text-center">Update User</h4>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                    <form method="post" id="userForm" autocomplete="off">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <span>
+                                <input type="radio" name="gender" id="gender" value="male"> Male
+                                <input type="radio" name="gender" id="gender" value="female"> Female
+                                <input type="radio" name="gender" id="gender" value="transgender"> Transgender
+                            </span>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success">Update User</button>
+                            <button type="reset" class="btn btn-warning">Clear</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </section>
+    <!-- container ends here -->
+
+    <!-- script starts here -->
+    <script src="assets/js/update.js"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+:root {
+    --bg-color-light: #ddd;
+    --bg-color-dark: #111;
+    --bg-color-md: #566456;
+    --white: #fff; 
+    /* Color Palette */         
+    --p1-bg: #c970c1;
+    --p2-bg: #289440;
+    --p3-bg: #47706b;
+    --p4-bg: #e7ddcc;
+    --p5-bg: #5eeb47;
+}
+
+* { 
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+}
+
+/* menu block starts here */
+
+.navbar {
+    background-color: var(--p3-bg);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar .logo, 
+.navbar .menu a {
+    padding: 14px 16px;
+    color: var(--white);
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar .logo:hover, 
+.navbar .menu a:hover {
+    background-color: var(--p2-bg);
+}
+
+/* menu block ends here */
+
+/* container */
+.container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* form */
+.container .form {
+    background-color: var(--white);
+}
+
+.form .card {
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 2px 4px 5px rgba(0, 0, 0, 0.2), 3px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+.form .card-header {
+    padding: 10px;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.form .card-body {
+    padding: 20px;
+}
+
+.form .card-body .form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form .card-body .form-group input {
+    padding: 12px 14px;
+    margin: 10px;
+    font-size: 1.2em;
+}
+
+.form-group {
+    font-weight: bold;
+    color: var(--p3-bg);
+}
+
+.btn {
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0px 0px 15px;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+.btn-success {
+    background-color: var(--p2-bg);
+    color: var(--white);
+}
+
+.btn-warning {
+    background-color: var(--p1-bg);
+    color: var(--white);
+}
+
+.btn-danger {
+    background-color: orangered;
+    color: var(--white);
+}
+
+.main-container {
+    width: 80%;
+    margin: 1% auto;
+}
+
+.main-container > .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    width: 100%;
+    letter-spacing: 3px;
+    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.2), -2px 3px 2px  rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+
+.table {
+    border: 1px solid #ccc;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table  th {
+    background-color: #807f7f;
+    position: sticky;
+    top: 48px;
+    z-index: 1000;
+    color: #fff;
+}
+
+
+.table > tr, th, td {
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.fa-solid {
+    border: 2px solid #ccc;
+    padding: 12px 14px;
+    font-size: 1.2em;
+    margin: 0px 5px;
+    border-radius: 5px;
+}
+
+.fa-pen-to-square {
+    background-color: var(--p3-bg);
+    color: #fff;
+}
+
+.fa-trash-can {
+    background-color: var(--p2-bg);
+    color: #fff;
+}
+
+
+
